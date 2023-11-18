@@ -3,11 +3,10 @@ import axios from "axios";
 export async function sendPrompt(message: string) {
   try {
     const response = await axios.post(
-      "/api/expert/askBlackSanta",
+      "/api/expert/askInternAgent",
       { prompt: message },
       {
         headers: {
-          "Access-Control-Allow-Origin": "https://b-bot-incubator.appengine.flow.ch",
           Authorization: `Bearer TNHKogj28VRErNVdRr2ArEnZBrNFKnZ6`,
         }
       }
