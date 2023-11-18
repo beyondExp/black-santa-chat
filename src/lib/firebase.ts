@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCwTf37quV2XuKOu8mVkKp7VI_CPFc6lA8",
-  authDomain: "dennx-f7dc5.firebaseapp.com",
-  projectId: "dennx-f7dc5",
-  storageBucket: "dennx-f7dc5.appspot.com",
-  messagingSenderId: "1006298883222",
-  appId: "1:1006298883222:web:a7b8fdf46229000285ceb7"
+  apiKey: "AIzaSyBEjG91X1krP0UKVBbIFcYsPDuT3Ai9yOA",
+  authDomain: "black-santa-31873.firebaseapp.com",
+  projectId: "black-santa-31873",
+  storageBucket: "black-santa-31873.appspot.com",
+  messagingSenderId: "221215289585",
+  appId: "1:221215289585:web:8670f21e7b7b98ce4f7950",
+  measurementId: "G-Q7Z558ZDV1"
 };
 
 const app = initializeApp(firebaseConfig);
