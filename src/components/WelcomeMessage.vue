@@ -40,7 +40,7 @@ function handlePromptClick(prompt: string) {
   <Card>
     <CardHeader>
       <CardTitle>Hallo ich bin Black Santa!</CardTitle>
-      <CardDescription>Start a conversation with me by sending a message or by clicking the example prompts.</CardDescription>
+      <CardDescription>Beginne ein Gespräch mit mir, indem du mir eine Nachricht schickst oder auf die Beispielanweisungen klickst.</CardDescription>
     </CardHeader>
     <CardContent class="flex flex-col gap-4 my-3">
       <Button 

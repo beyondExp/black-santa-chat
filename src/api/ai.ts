@@ -2,7 +2,15 @@ import axios from "axios";
 
 export async function sendPrompt(message: string) {
   try {
-    const response = await axios.post(import.meta.env.BBOT_API_URL, { prompt: message });
+    const response = await axios.post(
+      import.meta.env.BBOT_API_URL,
+      { prompt: message },
+      {
+        headers: {
+          Authorization: `Bearer ${import.meta.env.BBOT_API_TOKEN}`,
+        }
+      }
+    );
     return response.data.message;
   } catch (error: any) {
     if (error.response && error.response.status === 500) {
