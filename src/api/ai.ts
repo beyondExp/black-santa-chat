@@ -3,7 +3,7 @@ import axios from "axios";
 export async function sendPrompt(message: string) {
   try {
     const response = await axios.post(
-      import.meta.env.BBOT_API_URL,
+      "https://b-bot-incubator.appengine.flow.ch/expert/askInternAgent",
       { prompt: message },
       {
         headers: {
