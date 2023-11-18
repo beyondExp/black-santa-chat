@@ -9,7 +9,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { useToast } from 'vue-toastification'
 
 const message = ref('');
-const isUserSignedIn = ref(true);
+const isUserSignedIn = ref(false);
 const toast = useToast();
 
 const emit = defineEmits(['send', 'clear-chat']);
@@ -19,14 +19,14 @@ onAuthStateChanged(auth, (userState) => {
 });
 
 function handleSendClick() {
-  if (isUserSignedIn.value) { 
+  //if (isUserSignedIn.value) {
     if (message.value.trim() !== '') {
       emit('send', message.value.trim())
       message.value = ''
     }
-  } else {
-    toast.error('Please sign in to send a message.')
-  }
+  //} else {
+    //toast.error('Please sign in to send a message.')
+  //}
 }
 
 function handleClearChat() {
