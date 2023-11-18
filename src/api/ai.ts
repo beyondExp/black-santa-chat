@@ -25,8 +25,8 @@ export async function sendPrompt(message: string) {
     );
 
     // Save the data attribute to sessionStorage if it's not null
-    if (response.data.result && response.data.result.conversationId) {
-      sessionStorage.setItem('dataAttribute', response.data.result.conversationId);
+    if (response.data.conversationId) {
+      sessionStorage.setItem('conversationId', response.data.conversationId);
     }
 
     return response.data.result;
