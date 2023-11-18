@@ -7,7 +7,7 @@ export async function sendPrompt(message: string) {
 
     // Prepare the payload for the POST request
     const payload = {
-      "expertId": 1,
+      "expertId": 5,
       "promptId": null,
       "conversationId": conversationId ? conversationId : null,
       "model": "gpt-4",
