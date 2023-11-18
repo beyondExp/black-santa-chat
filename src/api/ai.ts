@@ -15,7 +15,7 @@ export async function sendPrompt(message: string) {
     };
 
     const response = await axios.post(
-      "/api/expert/askInternAgent",
+      "/api/expert/askBlackSanta",
       payload,
       {
         headers: {
