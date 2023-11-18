@@ -8,7 +8,7 @@ export async function sendPrompt(message: string) {
       {
         headers: {
           "Access-Control-Allow-Origin": "https://b-bot-incubator.appengine.flow.ch",
-          Authorization: `Bearer ${import.meta.env.BBOT_API_TOKEN}`,
+          Authorization: `Bearer TNHKogj28VRErNVdRr2ArEnZBrNFKnZ6`,
         }
       }
     );
