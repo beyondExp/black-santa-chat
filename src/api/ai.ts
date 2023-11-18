@@ -4,10 +4,15 @@ export async function sendPrompt(message: string) {
   try {
     const response = await axios.post(
       "/api/expert/askInternAgent",
-      { prompt: message },
+      {
+        "expertId": 1,
+        "promptId": null,
+        "model": "gpt-4",
+        "message": message
+      },
       {
         headers: {
-          Authorization: `Bearer TNHKogj28VRErNVdRr2ArEnZBrNFKnZ6`,
+          Authorization: `Bearer jzDv9XslOaUq6-h8lXgKmVFF9lyWyUGP`,
         }
       }
     );
