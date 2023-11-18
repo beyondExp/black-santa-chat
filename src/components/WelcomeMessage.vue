@@ -39,7 +39,7 @@ function handlePromptClick(prompt: string) {
 <template>
   <Card>
     <CardHeader>
-      <CardTitle>Hello, I'm DennX!</CardTitle>
+      <CardTitle>Hallo ich bin Black Santa!</CardTitle>
       <CardDescription>Start a conversation with me by sending a message or by clicking the example prompts.</CardDescription>
     </CardHeader>
     <CardContent class="flex flex-col gap-4 my-3">

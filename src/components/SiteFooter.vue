@@ -7,15 +7,15 @@
           href="https://github.com/sinnedpenguin/dennx"
           className="hover:underline"
         >
-          DennX
+          Black Santa
         </a>
-          - AI-powered chatbot -
+          - AI-powered Santa Clause -
         <a
           target="_blank"
-          href="https://sinnedpenguin.me/"
+          href="https://b-bot.ch"
           className="hover:underline"
         >
-          sinnedpenguin
+          Powered by B-Bot
         </a>
       </span>
     </div>
