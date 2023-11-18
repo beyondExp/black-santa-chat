@@ -22,9 +22,12 @@ onAuthStateChanged(auth, (userState) => {
 });
 
 const examplePrompts = [
-  'Explain quantum physics in a pirate voice.',
-  'Imagine you are a time traveler. Narrate your adventures using song lyrics.',
-  'Write a haiku about the color blue in a language of your choice.',
+  'Ich brauche eine Geschenkidee für eine Freundin',
+  'Kannst du mir ein Gedicht schreiben über die Socke am Kamin?',
+  'Welches Geschenk passt zu einem 10-jährigen Jungen?',
+  'Ich brauche ein Geschenk für meine Mutter',
+  'Ich brauche ein Geschenk für meinen Vater',
+  'Kannst du mir ein Rezept für einen Weihnachtskuchen geben?',
 ]
 
 function handlePromptClick(prompt: string) {
