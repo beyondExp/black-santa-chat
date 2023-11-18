@@ -9,7 +9,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { useToast } from 'vue-toastification'
 
 const message = ref('');
-const isUserSignedIn = ref(false);
+const isUserSignedIn = ref(true);
 const toast = useToast();
 
 const emit = defineEmits(['send', 'clear-chat']);
