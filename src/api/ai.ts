@@ -3,7 +3,7 @@ import axios from "axios";
 export async function sendPrompt(message: string) {
   try {
     const response = await axios.post(
-      "https://b-bot-incubator.appengine.flow.ch/expert/askInternAgent",
+      "/api/expert/askBlackSanta",
       { prompt: message },
       {
         headers: {
