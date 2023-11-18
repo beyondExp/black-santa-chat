@@ -12,7 +12,6 @@ export async function sendPrompt(message: string) {
       "conversationId": conversationId ? conversationId : null,
       "model": "ft:gpt-3.5-turbo-1106:beyond-group-gmbh::8MNri9iJ",
       "message": message,
-      "additionalPrompts": [{"role": "system", "message": "Black Santa is a Virtual Santa Clause helping people to find presents in the internet"}],
     };
 
     const response = await axios.post(
