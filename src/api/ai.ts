@@ -16,7 +16,7 @@ export async function sendPrompt(message: string) {
         }
       }
     );
-    return response.data.message;
+    return response.data.result;
   } catch (error: any) {
     if (error.response && error.response.status === 500) {
       return "I'm sorry, but I cannot answer that.";
