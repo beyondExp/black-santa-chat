@@ -12,7 +12,7 @@ export async function sendPrompt(message: string) {
       "conversationId": conversationId ? conversationId : null,
       "model": "ft:gpt-3.5-turbo-1106:beyond-group-gmbh::8MNri9iJ",
       "message": message,
-      "additionalMessages": [{"role": "system", "message": "Hello, I'm Black Santa. I'm here to help you with your Christmas shopping. What can I do for you?"}"}],
+      "additionalMessages": [{"role": "system", "message": "Hello, I'm Black Santa. I'm here to help you with your Christmas shopping. What can I do for you?"}],
     };
 
     const response = await axios.post(
