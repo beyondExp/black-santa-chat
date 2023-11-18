@@ -31,11 +31,14 @@ const examplePrompts = [
 ]
 
 function handlePromptClick(prompt: string) {
+  emit('send-prompt', prompt);
+  /*
   if (user.value) {
     emit('send-prompt', prompt);
   } else {
     toast.error('Please sign in to send a message.');
   }
+   */
 }
 </script>
 
