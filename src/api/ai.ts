@@ -10,7 +10,7 @@ export async function sendPrompt(message: string) {
       "expertId": 5,
       "promptId": null,
       "conversationId": conversationId ? conversationId : null,
-      "model": "ft:gpt-3.5-turbo-1106:beyond-group-gmbh::8MNri9iJ",
+      "model": "ft:gpt-3.5-turbo-1106:beyond-group-gmbh::8MjqixHo",
       "message": message,
     };
 
