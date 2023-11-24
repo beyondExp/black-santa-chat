@@ -34,6 +34,8 @@ onAuthStateChanged(auth, user => {
   if (user) {
     const chatsRef = collection(db, 'chats');
     const q = query(chatsRef, where('userId', '==', user.uid));
+    console.log('user id:',user.uid);
+    console.log('ChatsRef:',chatsRef);
 
     getDocs(q).then(querySnapshot => {
       chats.value = querySnapshot.docs.map(doc => {
@@ -49,8 +51,7 @@ onAuthStateChanged(auth, user => {
         return { id: doc.id, ...chatData, title };
       }) as Chat[];
     }).catch(error => {
-      console.log('user id:',user.uid);
-      console.log('ChatsRef:',chatsRef);
+
       console.error('Error fetching chats:', error);
     });
   } else {
