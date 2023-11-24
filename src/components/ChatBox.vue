@@ -106,6 +106,12 @@ function formatMessage(message: string) {
       <span class="animate-ping">.</span>
       <span class="animate-ping delay-150">.</span>
       <span class="animate-ping delay-300">.</span>
+      <span class="animate-ping delay-450">.</span>
+      <span class="animate-ping delay-600">.</span>
+      <span class="animate-ping delay-750">.</span>
+      <span class="animate-ping delay-800">.</span>
+      <span class="animate-ping delay-950">.</span>
+      <span class="animate-ping delay-1100">.</span>
       <!-- Werbung nach Chat -->
       <amp-ad width="100vw" height="320"
               type="adsense"
