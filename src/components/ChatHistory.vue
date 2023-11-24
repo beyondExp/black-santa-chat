@@ -49,6 +49,8 @@ onAuthStateChanged(auth, user => {
         return { id: doc.id, ...chatData, title };
       }) as Chat[];
     }).catch(error => {
+      console.log('user id:',user.uid);
+      console.log('ChatsRef:',chatsRef);
       console.error('Error fetching chats:', error);
     });
   } else {
