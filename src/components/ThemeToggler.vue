@@ -4,9 +4,9 @@ import { Sun, Moon } from 'lucide-vue-next'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isDarkMode = ref(localStorage.getItem('darkMode') === 'true')
-const logo = document.querySelector('.logo-santa')
 function toggleDarkMode() {
   const root = document.querySelector(':root')
+  const logo = document.querySelector('.logo-santa')
 
   root?.classList.toggle('dark')
   isDarkMode.value = !isDarkMode.value
