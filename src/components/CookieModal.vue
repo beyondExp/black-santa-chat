@@ -128,8 +128,8 @@ const goToProduct = (url, productName) => {
 }
 
 .active {
-  background-color: #ff5252; /* Or your active tab color */
-  color: white;
+  background-color: #ff5252 !important; /* Or your active tab color */
+  color: white !important;
 }
 
 .card {
