@@ -24,7 +24,7 @@ onAuthStateChanged(auth, (userState) => {
 
 const examplePrompts = [
   'Ich brauche eine Geschenkidee für eine Freundin',
-  'Kannst du mir ein weihnachtsgedicht schreiben?',
+  'Kannst du mir ein Weihnachtsgedicht schreiben?',
   'Welches Geschenk passt zu einem 10-jährigen Jungen?',
   'Ich brauche ein Geschenk für meine Mutter',
   'Ich brauche ein Geschenk für meinen Vater',
