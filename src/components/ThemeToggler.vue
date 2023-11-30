@@ -12,7 +12,7 @@ function toggleDarkMode() {
   root?.classList.toggle('dark')
   isDarkMode.value = !isDarkMode.value
   // change logo src on toggle
-  if (isDarkMode.value) {
+  if (logo?.setAttribute('src', '/bbot-meets-dark.png')) {
     logo?.setAttribute('src', '/bbot-meets.png')
     console.log('dark mode')
   } else {
