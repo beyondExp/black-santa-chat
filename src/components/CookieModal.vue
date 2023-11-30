@@ -74,7 +74,7 @@ const goToProduct = (url, productName) => {
   width: 100%;
   height: 100%;
   margin-left: 0px !important;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@ const goToProduct = (url, productName) => {
 }
 
 .modal-content {
-  background: white;
+  background: var(--background);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -94,8 +94,8 @@ const goToProduct = (url, productName) => {
 }
 
 .card {
-  background: #f3f3f3;
-  border: 1px solid #ddd;
+  background: var(--foreground);
+  border: 1px solid var(--card);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
