@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { Button } from '@/components/ui/button'
 import { CookieIcon } from 'lucide-vue-next'
+import { AvatarImage } from 'radix-vue'
 
 const showModal = ref(false)
 
@@ -21,10 +22,40 @@ const goToProduct = (url) => {
 
   <div v-if="showModal" class="modal">
     <div class="modal-content">
-      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link1')">Product 1</Button>
-      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link2')">Product 2</Button>
-      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link3')">Product 3</Button>
-      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link4')">Alles!</Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link1')">
+        <AvatarImage
+          class='logo-santa'
+          src="/keks.png"
+          alt="Santa"
+          size="55"
+          style="width: auto; height: 55px; margin: auto;"
+        />
+        1 Keks
+      </Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link2')">
+        <AvatarImage
+          class='logo-santa'
+          src="/kekse.png"
+          alt="Santa"
+          size="55"
+          style="width: auto; height: 55px; margin: auto;"
+        />
+        2 Kekse
+      </Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link3')">
+        <AvatarImage
+          class='logo-santa'
+          src="/keks_mit_milch.png"
+          alt="Santa"
+          size="55"
+          style="width: auto; height: 55px; margin: auto;"
+        />
+        Keks mit Milch
+      </Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link4')">
+        Alles!
+      </Button>
+
       <Button variant="secondary" @click="toggleModal">Close</Button>
     </div>
   </div>
@@ -45,7 +76,7 @@ const goToProduct = (url) => {
 }
 
 .product{
-  width: ;
+  width: 100% !important;
 }
 
 .modal-content {
