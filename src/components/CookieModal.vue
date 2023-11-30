@@ -102,6 +102,8 @@ const goToProduct = (url, productName) => {
             Mehr Infos
           </Button>
       <br/>
+      <br/>
+      <br/>
       <h2>Danke das du da bist!</h2>
       <br/>
       <Button class='close-button' variant="secondary" @click="toggleModal">Close</Button>
@@ -129,6 +131,7 @@ const goToProduct = (url, productName) => {
 }
 
 .modal-content {
+  box-shadow: 0px 1px 10px 0px hsl(var(--background));
   background: hsl(var(--background));
   padding: 20px;
   border-radius: 5px;
