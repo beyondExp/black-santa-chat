@@ -33,6 +33,8 @@ function toggleDarkMode() {
 onMounted(() => {
   if (isDarkMode.value) {
     const root = document.querySelector(':root')
+    const logo = document.querySelector('.logo-santa')
+    logo?.setAttribute('src', '/bbot-meets.png')
     root?.classList.add('dark')
   }
 })
