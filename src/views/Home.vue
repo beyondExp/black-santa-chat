@@ -11,12 +11,3 @@ import ChatBox from '@/components/ChatBox.vue';
     </div>
   </section>
 </template>
-<script>
-import { VSnow } from 'vsnow';
-
-export default {
-  components: {
-    VSnow
-  }
-};
-</script>
