@@ -13,12 +13,12 @@ function toggleDarkMode() {
   isDarkMode.value = !isDarkMode.value
   // change logo src on toggle
   if (isDarkMode.value) {
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
+    logo?.setAttribute('src', '/bbot-meets.png')
     console.log('dark mode')
   } else {
     console.log('dark logo')
 
-    logo?.setAttribute('src', '/bbot-meets.png')
+    logo?.setAttribute('src', '/bbot-meets-dark.png')
   }
 
   localStorage.setItem('darkMode', String(isDarkMode.value))
