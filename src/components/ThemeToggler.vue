@@ -9,10 +9,10 @@ function toggleDarkMode() {
   const root = document.querySelector(':root')
   const logo = document.querySelector('.logo-santa')
   // change logo src on toggle
-  if (logo?.getAttribute('src') === '/bbot-meets.png') {
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
-  } else {
+  if (logo?.getAttribute('src') === '/bbot-meets-dark.png') {
     logo?.setAttribute('src', '/bbot-meets.png')
+  } else {
+    logo?.setAttribute('src', '/bbot-meets-dark.png')
   }
 
   root?.classList.toggle('dark')
