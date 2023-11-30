@@ -21,9 +21,10 @@ const goToProduct = (url) => {
 
   <div v-if="showModal" class="modal">
     <div class="modal-content">
-      <Button variant="primary" @click="() => goToProduct('https://buy.stripe.com/link1')">Product 1</Button>
-      <Button variant="primary" @click="() => goToProduct('https://buy.stripe.com/link2')">Product 2</Button>
-      <Button variant="primary" @click="() => goToProduct('https://buy.stripe.com/link3')">Product 3</Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link1')">Product 1</Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link2')">Product 2</Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link3')">Product 3</Button>
+      <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link4')">Alles!</Button>
       <Button variant="secondary" @click="toggleModal">Close</Button>
     </div>
   </div>
@@ -36,10 +37,15 @@ const goToProduct = (url) => {
   top: 0;
   width: 100%;
   height: 100%;
+  margin-left: 0px !important;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product{
+  width: ;
 }
 
 .modal-content {
