@@ -52,7 +52,7 @@ const goToProduct = (url, productName) => {
         </div>
 
         <div class="card" @click="() => goToProduct('https://buy.stripe.com/4gwdUibnI5zD79mdQR', '1 Keks und eine Milch')">
-          <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
+          <AvatarImage class='card-image' src="/kekse_und_milch.png" alt="Santa" />
           <div class="card-text">
             <p>1 Keks und eine Milch</p>
             <p>Preis: 5.- / Mtl.</p>
@@ -78,14 +78,16 @@ const goToProduct = (url, productName) => {
         </div>
 
         <div class="card" @click="() => goToProduct('https://buy.stripe.com/8wM7vUbnI0fjfFSfZ2', '1 Keks und eine Milch')">
-          <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
+          <AvatarImage class='card-image' src="/kekse_und_milch.png" alt="Santa" />
           <div class="card-text">
             <p>1 Keks und eine Milch</p>
             <p>Preis: 5.-</p>
           </div>
         </div>
       </div>
+      <br/>
       <h2>Wir spenden</h2>
+      <br/>
       <Button class='close-button' variant="secondary" @click="() => goToProduct('https://climate.stripe.com/kqg730', 'Climate')">
         <AvatarImage
           class='card-image'
