@@ -51,7 +51,6 @@ const goToProduct = (url, productName) => {
 
 <style scoped>
 .modal {
-  overflow: scroll;
   padding: 5px;
   position: fixed;
   left: 0;
@@ -74,6 +73,8 @@ const goToProduct = (url, productName) => {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  max-height: 80vh; /* 80% of the viewport height */
+  overflow-y: auto; /* Enables vertical scrolling */
 }
 
 .card {
