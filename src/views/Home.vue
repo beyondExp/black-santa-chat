@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ChatBox from '@/components/ChatBox.vue';
+import { VSnowDirective } from 'vsnow'
 </script>
 
 <template>
