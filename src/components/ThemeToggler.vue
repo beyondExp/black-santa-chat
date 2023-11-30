@@ -31,7 +31,7 @@ onMounted(() => {
 onUnmounted(() => {
   const root = document.querySelector(':root')
   root?.classList.remove('dark')
-  logo?.setAttribute('src', '/bbot-meets.png')
+  logo?.setAttribute('src', '/bbot-meets-dark.png')
 })
 </script>
 
