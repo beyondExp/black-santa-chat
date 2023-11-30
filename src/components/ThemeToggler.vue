@@ -17,7 +17,7 @@ function toggleDarkMode() {
   // change logo src based on the dark mode state
   if (isDarkMode.value) {
     // If dark mode is activated
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
+    logo?.setAttribute('src', '/bbot-meets.png')
     console.log('dark mode')
   } else {
     // If dark mode is deactivated
