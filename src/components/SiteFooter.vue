@@ -7,7 +7,7 @@
           href="https://github.com/sinnedpenguin/dennx"
           className="hover:underline"
         >
-          Black Santa
+          Santa
         </a>
           - AI-powered Santa Clause -
         <a
