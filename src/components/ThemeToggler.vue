@@ -24,14 +24,14 @@ onMounted(() => {
   if (isDarkMode.value) {
     const root = document.querySelector(':root')
     root?.classList.add('dark')
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
+    logo?.setAttribute('src', '/bbot-meets.png')
   }
 })
 
 onUnmounted(() => {
   const root = document.querySelector(':root')
   root?.classList.remove('dark')
-  logo?.setAttribute('src', '/bbot-meets-dark.png')
+  logo?.setAttribute('src', '/bbot-meets.png')
 })
 </script>
 
