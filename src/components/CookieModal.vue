@@ -85,7 +85,7 @@ const goToProduct = (url, productName) => {
 }
 
 .modal-content {
-  background: var(--background);
+  background: hsl(var(--background));
   padding: 20px;
   border-radius: 5px;
   text-align: center;
