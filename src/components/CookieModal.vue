@@ -86,8 +86,19 @@ const goToProduct = (url, productName) => {
         </div>
       </div>
       <h2>Wir spenden</h2>
-      <Button class='close-button' variant="secondary" @click="() => goToProduct('https://climate.stripe.com/kqg730', 'Climate')"><AvatarImage class='card-image' src="/climate.svg" alt="Climate" />
-        Mehr Infos</Button>
+      <Button class='close-button' variant="secondary" @click="() => goToProduct('https://climate.stripe.com/kqg730', 'Climate')">
+        <AvatarImage
+          class='card-image'
+          src="/climate.svg"
+          alt="Climate"
+          size="30"
+          style="
+            width: auto;
+            height: 30px;
+            margin: auto;
+          " />
+            Mehr Infos
+          </Button>
 
       <Button class='close-button' variant="secondary" @click="toggleModal">Close</Button>
     </div>
