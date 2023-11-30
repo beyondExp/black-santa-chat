@@ -26,19 +26,35 @@ const goToProduct = (url, productName) => {
       <h1>Hinterlasse dem Santa einen Keks</h1>
       <p>Wähle aus, wie viele Kekse du dem Santa geben möchtest.</p>
 
-      <div class="card" @click="() => goToProduct('https://buy.stripe.com/link1', '1 Keks')">
+      <div class="card" @click="() => goToProduct('https://buy.stripe.com/aEUeYm8bwgehfFS8wz', '1 Keks')">
         <AvatarImage class='card-image' src="/keks.png" alt="Santa" />
         <div class="card-text">
           <p>1 Keks</p>
+          <p>Preis: $1</p>
+        </div>
+      </div>
+
+      <div class="card" @click="() => goToProduct('https://buy.stripe.com/5kAeYmgI2gehaly146', '2 Kekse')">
+        <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
+        <div class="card-text">
+          <p>2 Kekse</p>
+          <p>Preis: $2</p>
+        </div>
+      </div>
+
+      <div class="card" @click="() => goToProduct('https://buy.stripe.com/4gwdUibnI5zD79mdQR', '1 Keks und eine Milch')">
+        <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
+        <div class="card-text">
+          <p>1 Keks und eine Milch</p>
           <p>Preis: $5</p>
         </div>
       </div>
 
-      <div class="card" @click="() => goToProduct('https://buy.stripe.com/link2', '2 Kekse')">
+      <div class="card" @click="() => goToProduct('https://buy.stripe.com/bIY8zY63oe691P2aEE', 'Alles!')">
         <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
         <div class="card-text">
-          <p>2 Kekse</p>
-          <p>Preis: $10</p>
+          <p>Alles!</p>
+          <p>Preis: $8</p>
         </div>
       </div>
 
