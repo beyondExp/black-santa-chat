@@ -51,6 +51,8 @@ const goToProduct = (url, productName) => {
 
 <style scoped>
 .modal {
+  overflow: scroll;
+  padding: 5px;
   position: fixed;
   left: 0;
   top: 0;
