@@ -24,11 +24,11 @@ onAuthStateChanged(auth, (userState) => {
 
 const examplePrompts = [
   'Ich brauche eine Geschenkidee für eine Freundin',
-  'Kannst du mir ein Gedicht schreiben über die Socke am Kamin?',
+  'Kannst du mir ein weihnachtsgedicht schreiben?',
   'Welches Geschenk passt zu einem 10-jährigen Jungen?',
   'Ich brauche ein Geschenk für meine Mutter',
   'Ich brauche ein Geschenk für meinen Vater',
-  'Kannst du mir ein Rezept für einen Weihnachtskuchen geben?',
+  'Kannst du mir ein Rezept für Plätzchen geben?',
 ]
 
 function handlePromptClick(prompt: string) {
