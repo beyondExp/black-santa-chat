@@ -5,10 +5,9 @@ import { Bot } from 'lucide-vue-next';
 import { AvatarImage } from 'radix-vue'
 import { CookieIcon } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
+import CookieModal from './CookieModal.vue'
 
-function goToCookie() {
-  window.location.href = 'https://buy.stripe.com/bIY8zY63oe691P2aEE'
-}
+
 </script>
 
 <template>
@@ -26,15 +25,13 @@ function goToCookie() {
       </nav>
       <div class="flex flex-1 items-center justify-end space-x-2">
         <nav class="md:flex items-center space-x-2">
+          <CookieModal />
+        </nav>
+        <nav class="md:flex items-center space-x-2">
           <ThemeToggler />
         </nav>
         <nav class="md:flex items-center space-x-2">
           <UserAvatar />
-        </nav>
-        <nav class="md:flex items-center space-x-2">
-          <Button @click="goToCookie" variant="ghost">
-            <CookieIcon />
-          </Button>
         </nav>
       </div>
     </div>
