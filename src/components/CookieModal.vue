@@ -39,7 +39,7 @@ const goToProduct = (url, productName) => {
           <AvatarImage class='card-image' src="/keks.png" alt="Santa" />
           <div class="card-text">
             <p>1 Keks</p>
-            <p>Preis: 1.-</p>
+            <p>Preis: 1.- / Mtl.</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const goToProduct = (url, productName) => {
           <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
           <div class="card-text">
             <p>2 Kekse</p>
-            <p>Preis: 2.-</p>
+            <p>Preis: 2.- / Mtl.</p>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const goToProduct = (url, productName) => {
           <AvatarImage class='card-image' src="/kekse.png" alt="Santa" />
           <div class="card-text">
             <p>1 Keks und eine Milch</p>
-            <p>Preis: 5.-</p>
+            <p>Preis: 5.- / Mtl.</p>
           </div>
         </div>
 
@@ -85,6 +85,9 @@ const goToProduct = (url, productName) => {
           </div>
         </div>
       </div>
+      <h2>Wir spenden</h2>
+      <Button class='close-button' variant="secondary" @click="() => goToProduct('https://climate.stripe.com/kqg730', 'Climate')"><AvatarImage class='card-image' src="/climate.svg" alt="Climate" />
+        Mehr Infos</Button>
 
       <Button class='close-button' variant="secondary" @click="toggleModal">Close</Button>
     </div>
