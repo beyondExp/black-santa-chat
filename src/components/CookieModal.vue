@@ -22,6 +22,9 @@ const goToProduct = (url) => {
 
   <div v-if="showModal" class="modal">
     <div class="modal-content">
+      <h1>Hinterlasse dem Santa einen Keks</h1>
+      <p>Wähle aus, wie viele Kekse du dem Santa geben möchtest.</p>
+
       <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link1')">
         <AvatarImage
           class='logo-santa'
@@ -45,7 +48,7 @@ const goToProduct = (url) => {
       <Button class="product" variant="primary" @click="() => goToProduct('https://buy.stripe.com/link3')">
         <AvatarImage
           class='logo-santa'
-          src="/keks_mit_milch.png"
+          src="/kekse_mit_milch.png"
           alt="Santa"
           size="55"
           style="width: auto; height: 55px; margin: auto;"
@@ -65,6 +68,7 @@ const goToProduct = (url) => {
 .modal {
   position: fixed;
   left: 0;
+  padding: 5px;
   top: 0;
   width: 100%;
   height: 100%;
