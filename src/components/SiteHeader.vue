@@ -4,7 +4,11 @@ import UserAvatar from './UserAvatar.vue';
 import { Bot } from 'lucide-vue-next';
 import { AvatarImage } from 'radix-vue'
 import { CookieIcon } from 'lucide-vue-next'
+import { Button } from '@/components/ui/button'
 
+function goToCookie() {
+  window.location.href = 'https://buy.stripe.com/bIY8zY63oe691P2aEE'
+}
 </script>
 
 <template>
@@ -28,9 +32,9 @@ import { CookieIcon } from 'lucide-vue-next'
           <UserAvatar />
         </nav>
         <nav class="md:flex items-center space-x-2">
-          <a href='https://buy.stripe.com/bIY8zY63oe691P2aEE'>
+          <Button @click="goToCookie" variant="ghost">
             <CookieIcon />
-          </a>
+          </Button>
         </nav>
       </div>
     </div>
