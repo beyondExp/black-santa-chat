@@ -18,10 +18,12 @@ function toggleDarkMode() {
   if (isDarkMode.value) {
     // If dark mode is activated
     logo?.setAttribute('src', '/bbot-meets.png')
-    console.log('dark mode')
+    console.log('/bbot-meets.png')
   } else {
     // If dark mode is deactivated
-    logo?.setAttribute('src', '/bbot-meets.png')
+    console.log('/bbot-meets-dark.png')
+
+    logo?.setAttribute('src', '/bbot-meets-dark.png')
   }
 }
 
