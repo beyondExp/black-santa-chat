@@ -51,11 +51,27 @@ const goToProduct = (url, productName) => {
 
 <style scoped>
 .modal {
-  /* Existing styles */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product{
+  width: 100% !important;
 }
 
 .modal-content {
-  /* Existing styles */
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .card {
