@@ -22,6 +22,7 @@
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
     "vue": "^3.3.4",
+    "vue-snowf": "^0.0.2",
     "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
