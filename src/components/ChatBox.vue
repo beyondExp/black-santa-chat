@@ -106,18 +106,19 @@ function formatMessage(message: string) {
       <span class="animate-ping">.</span>
       <span class="animate-ping delay-150">.</span>
       <span class="animate-ping delay-300">.</span>
-      <!-- Werbung nach Chat -->
-      <amp-ad width="100vw" height="320"
-              type="adsense"
-              data-ad-client="ca-pub-4053881617635255"
-              data-ad-slot="3607153652"
-              data-auto-format="rspv"
-              data-full-width="">
-        <div overflow=""></div>
-      </amp-ad>
+
     </div>
 
     <ChatHistory @chat-selected="onChatSelected" />
+    <!-- Werbung nach Chat -->
+    <amp-ad width="100vw" height="320"
+            type="adsense"
+            data-ad-client="ca-pub-4053881617635255"
+            data-ad-slot="3607153652"
+            data-auto-format="rspv"
+            data-full-width="">
+      <div overflow=""></div>
+    </amp-ad>
     <Input @send="handleSend" @clear-chat="handleClearChat" />
   </div>
 </template>
