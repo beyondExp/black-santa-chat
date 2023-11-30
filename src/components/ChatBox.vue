@@ -118,7 +118,7 @@ function formatMessage(message: string) {
             data-auto-format="mcrspv"
             data-full-width="">
       <div overflow=""></div>
-    </amp-ad
+    </amp-ad>
     <Input @send="handleSend" @clear-chat="handleClearChat" />
   </div>
 </template>
