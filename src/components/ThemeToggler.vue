@@ -14,7 +14,10 @@ function toggleDarkMode() {
   // change logo src on toggle
   if (isDarkMode.value) {
     logo?.setAttribute('src', '/bbot-meets.png')
+    console.log('dark mode')
   } else {
+    console.log('dark logo')
+
     logo?.setAttribute('src', '/bbot-meets-dark.png')
   }
 
@@ -25,6 +28,8 @@ onMounted(() => {
   if (isDarkMode.value) {
     const root = document.querySelector(':root')
     root?.classList.add('dark')
+    console.log('dark mode')
+
     logo?.setAttribute('src', '/bbot-meets.png')
   }
 })
@@ -32,6 +37,8 @@ onMounted(() => {
 onUnmounted(() => {
   const root = document.querySelector(':root')
   root?.classList.remove('dark')
+  console.log('dark logo')
+
   logo?.setAttribute('src', '/bbot-meets-dark.png')
 })
 </script>
