@@ -114,11 +114,11 @@ function formatMessage(message: string) {
     <amp-ad width="100vw" height="320"
             type="adsense"
             data-ad-client="ca-pub-4053881617635255"
-            data-ad-slot="3607153652"
-            data-auto-format="rspv"
+            data-ad-slot="8606039324"
+            data-auto-format="mcrspv"
             data-full-width="">
       <div overflow=""></div>
-    </amp-ad>
+    </amp-ad
     <Input @send="handleSend" @clear-chat="handleClearChat" />
   </div>
 </template>
