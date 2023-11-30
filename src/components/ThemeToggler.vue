@@ -8,15 +8,16 @@ const logo = document.querySelector('.logo-santa')
 function toggleDarkMode() {
   const root = document.querySelector(':root')
 
-  // change logo src on toggle
-  if (logo?.getAttribute('src') === '/bbot-meets.png') {
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
-  } else {
-    logo?.setAttribute('src', '/bbot-meets.png')
-  }
 
   root?.classList.toggle('dark')
   isDarkMode.value = !isDarkMode.value
+  // change logo src on toggle
+  if (isDarkMode.value) {
+    logo?.setAttribute('src', '/bbot-meets.png')
+  } else {
+    logo?.setAttribute('src', '/bbot-meets-dark.png')
+  }
+
   localStorage.setItem('darkMode', String(isDarkMode.value))
 }
 
