@@ -101,7 +101,7 @@ const goToProduct = (url, productName) => {
         </div>
       </div>
 
-      <Button variant="secondary" @click="toggleModal">Close</Button>
+      <Button class='close-button' variant="secondary" @click="toggleModal">Close</Button>
     </div>
   </div>
 </template>
@@ -134,12 +134,16 @@ const goToProduct = (url, productName) => {
   overflow-y: auto; /* Enables vertical scrolling */
 }
 
+.tab-buttons{
+  padding: 15px;
+}
+
 .tab-buttons .Button {
   margin: 0 10px;
 }
 
 .active {
-  background-color: #007bff; /* Or your active tab color */
+  background-color: #ff5252; /* Or your active tab color */
   color: white;
 }
 
@@ -166,5 +170,8 @@ const goToProduct = (url, productName) => {
 
 .card-text p {
   margin: 5px 0;
+}
+.close-button{
+  width: 100%;
 }
 </style>
