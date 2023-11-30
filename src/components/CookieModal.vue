@@ -95,11 +95,13 @@ const goToProduct = (url, productName) => {
           style="
             width: auto;
             height: 30px;
-            margin: auto;
+            margin: 0 5px 0 0;
           " />
             Mehr Infos
           </Button>
-
+      <br/>
+      <h2>Danke das du da bist!</h2>
+      <br/>
       <Button class='close-button' variant="secondary" @click="toggleModal">Close</Button>
     </div>
   </div>
