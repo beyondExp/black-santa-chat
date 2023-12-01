@@ -13,7 +13,7 @@ defineProps({
     </p>
   </div>
 </template>
-<style>
+<style scoped>
 .chat-message >>> a{
   background: #b11e31;
   color: inherit;
