@@ -1,9 +1,11 @@
 import axios from "axios";
+import MarkdownIt from "markdown-it";
 
 export async function sendPrompt(message: string) {
   try {
     // Retrieve the data attribute from sessionStorage
     const conversationId = sessionStorage.getItem('conversationId');
+    const markdown = new MarkdownIt();
 
     // Prepare the payload for the POST request
     const payload = {
@@ -29,7 +31,8 @@ export async function sendPrompt(message: string) {
       sessionStorage.setItem('conversationId', response.data.conversationId);
     }
 
-    return response.data.result;
+    return markdown.render(response.data.result);
+
   } catch (error: any) {
     if (error.response && error.response.status === 500) {
       return "I'm sorry, but I cannot answer that.";
