@@ -97,7 +97,7 @@ function formatMessage(message: string) {
       :class="[
         'p-2 rounded-md',
         message.sender === 'user' ? 'bg-primary text-white dark:text-black' : 'bg-secondary',
-        message.sender === 'user' ? 'self-end' : 'self-start'
+        message.sender === 'user' ? 'self-end' : 'self-start chat-message'
       ]"
     >
       <div v-html="formatMessage(message.text)"></div>
@@ -122,3 +122,17 @@ function formatMessage(message: string) {
     <Input @send="handleSend" @clear-chat="handleClearChat" />
   </div>
 </template>
+<style scoped>
+.chat-message >>> a{
+  background: #b11e31;
+  color: inherit;
+  text-decoration: inherit;
+  padding: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 100% !important;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+</style>
