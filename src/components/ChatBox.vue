@@ -135,4 +135,19 @@ function formatMessage(message: string) {
   text-align: center;
   border-radius: 5px;
 }
+.chat-message >>> a:hover{
+  background: #4d0e15;
+}
+.chat-message >>> a:after{
+  width: 35px;
+  display: inline-block;
+  content: "🎁";
+}
+.chat-message >>> a:hover:after{
+  width: 35px;
+  display: inline-block;
+  content: "🎉";
+  transition: all 0.5s;
+}
+
 </style>
