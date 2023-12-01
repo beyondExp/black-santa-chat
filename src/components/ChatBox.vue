@@ -136,7 +136,8 @@ function formatMessage(message: string) {
   border-radius: 5px;
 }
 .chat-message >>> a:hover{
-  background: #4d0e15;
+  background: #bf2233;
+  box-shadow: 1px 0px 2px 1px #0000004f;
 }
 .chat-message >>> a:after{
   width: 35px;
