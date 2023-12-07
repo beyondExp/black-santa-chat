@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Button } from '@/components/ui/button'
-import { CookieIcon } from 'lucide-vue-next'
+import { CookieIcon, Moon } from 'lucide-vue-next'
 import { AvatarImage } from 'radix-vue'
 
 const showModal = ref(false)
@@ -120,7 +120,7 @@ const goToProduct = (url, productName) => {
   width: 100%;
   height: 100%;
   margin-left: 0px !important;
-  background-color: var(--background);
+  background: #000000a9;
   display: flex;
   justify-content: center;
   align-items: center;
