@@ -56,7 +56,7 @@ const toggleModal = () => {
             </p>
             <p>
 
-              <User2 class="h-5 w-5" />
+              <User2 class="h-5 w-5 center-icon" />
 
               Um Chats mit mir zu speichern und später darauf zugreifen zu können,
               kannst du das Symbol oben rechts nutzen und dich mit deinem Google-Konto anmelden.
@@ -64,7 +64,7 @@ const toggleModal = () => {
             </p>
             <p>
 
-              <History class="h-5 w-5" />
+              <History class="h-5 w-5 center-icon" />
 
               Das Symbol am Ende einer Nachricht dient dazu, bereits gespeicherte Chats anzuzeigen.
               Wenn du darauf klickst, kannst du alle bisherigen Chats einsehen und für jedes Thema einen neuen Chat öffnen,
@@ -75,14 +75,14 @@ const toggleModal = () => {
             </p>
             <p>
 
-              <Moon class="h-5 w-5" />
+              <Moon class="h-5 w-5 center-icon" />
 
               Das Symbol oben rechts in der Mitte ermöglicht es dir, zwischen dem hellen und dem dunklen Modus zu wechseln.
               So kannst du das Erscheinungsbild nach deinen Vorlieben anpassen.
             </p>
 
             <p>
-              <CookieIcon class="h-5 w-5" />
+              <CookieIcon class="h-5 w-5 center-icon" />
 
               Mit dem Keks-Symbol kannst du Santa-Kekse kaufen, um uns und unsere Weiterentwicklung zu unterstützen.
               Wir spenden auch für einen guten Zweck, den du dir ebenfalls anschauen kannst.
@@ -139,6 +139,7 @@ const toggleModal = () => {
   border-radius: 5px;
   text-align: center;
   max-height: 80vh; /* 80% of the viewport height */
+  max-width: 80vw; /* 80% of the viewport width */
   overflow-y: auto; /* Enables vertical scrolling */
 }
 
@@ -147,6 +148,14 @@ const toggleModal = () => {
 }
 .close-button{
   width: 100%;
+}
+
+.center-icon{
+  margin: auto;
+}
+
+.modal-content p{
+  padding: 15px;
 }
 
 </style>
