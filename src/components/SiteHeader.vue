@@ -61,3 +61,37 @@ const toggleModal = () => {
     </div>
   </header>
 </template>
+
+<style scoped>
+.modal {
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px !important;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  box-shadow: 0px 1px 10px 0px hsl(var(--background));
+  background: hsl(var(--background));
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-height: 80vh; /* 80% of the viewport height */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.card-text p {
+  margin: 5px 0;
+}
+.close-button{
+  width: 100%;
+}
+
+</style>
