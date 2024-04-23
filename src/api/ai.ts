@@ -21,7 +21,7 @@ export async function sendPrompt(message: string) {
       payload,
       {
         headers: {
-          Authorization: `Bearer m-lf9__9DaBPjScubsdHVWM6PVYrtR8j`,
+          Authorization: `Bearer SdlCHDR1zp4cGkONDL-YBjm2NyOm4y3d`,
         }
       }
     );
