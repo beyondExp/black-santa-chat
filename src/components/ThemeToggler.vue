@@ -10,6 +10,7 @@ function toggleDarkMode() {
 
   root?.classList.toggle('dark')
   isDarkMode.value = !isDarkMode.value
+  const logoURL = import.meta.env.VITE_LOGO_URL;
 
 
   localStorage.setItem('darkMode', String(isDarkMode.value))
@@ -17,14 +18,14 @@ function toggleDarkMode() {
   // change logo src based on the dark mode state
   if (isDarkMode.value) {
     // If dark mode is activated
-    logo?.setAttribute('src', '/bbot-meets.png')
+    logo?.setAttribute('src', logoURL)
     console.log('/bbot-meets.png')
     console.log(logo)
   } else {
     // If dark mode is deactivated
     console.log('/bbot-meets-dark.png')
 
-    logo?.setAttribute('src', '/bbot-meets-dark.png')
+    logo?.setAttribute('src', logoURL)
     console.log(logo)
 
   }

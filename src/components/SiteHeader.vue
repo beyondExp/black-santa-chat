@@ -32,7 +32,7 @@ const logoURL = import.meta.env.VITE_LOGO_URL;
           :src="logoURL"
           alt="Santa"
           size="55"
-          style="width: auto; height: 55px; margin: auto;"
+          style="width: auto; height: 45px; margin: auto; padding-left:15px;"
         />
         <div v-if="showModal" class="modal">
           <div class="modal-content">
@@ -42,19 +42,14 @@ const logoURL = import.meta.env.VITE_LOGO_URL;
               size="55"
               style="width: 55px; height: 55px; border-radius: 50%; margin: auto;"
             />
-            <h1>Ho ho ho!</h1>
+            <h1>Hey du!</h1>
             <p>
               Ich werde versuchen, deine Fragen bestmöglich zu beantworten.
               Wenn ich einmal keine passende Antwort habe, liegt das oft an der gestellten Frage.
               Du kannst die Frage umformulieren oder mir mehr Kontext geben,
               damit ich besser antworten kann.
             </p>
-            <p>
-              Wenn du möchtest, kann ich direkt nach Produkten im Internet suchen.
-              Falls ich dies nicht automatisch tue, kannst du mich darum bitten.
-              Gib einfach den Namen des Produkts an, nach dem du suchst,
-              und ich werde eine Suche im Internet durchführen.
-            </p>
+
             <p>
 
               <User2 class="h-5 w-5 center-icon" />
@@ -82,7 +77,7 @@ const logoURL = import.meta.env.VITE_LOGO_URL;
               So kannst du das Erscheinungsbild nach deinen Vorlieben anpassen.
             </p>
 
-            <p>
+            <p style='display:none'>
               <CookieIcon class="h-5 w-5 center-icon" />
 
               Mit dem Keks-Symbol kannst du Santa-Kekse kaufen, um uns und unsere Weiterentwicklung zu unterstützen.
@@ -104,7 +99,7 @@ const logoURL = import.meta.env.VITE_LOGO_URL;
         </div>
       </nav>
       <div class="flex flex-1 items-center justify-end space-x-2">
-        <nav class="md:flex items-center space-x-2">
+        <nav class="md:flex items-center space-x-2" style='display: none'>
           <CookieModal />
         </nav>
         <nav class="md:flex items-center space-x-2">
