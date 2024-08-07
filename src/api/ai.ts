@@ -28,7 +28,7 @@ export async function sendPrompt(message: string) {
     };
 
     const response = await axios.post(
-      "/api/v1/invoke_agent",
+      "/v1/invoke_agent",
       payload,
       {
         headers: {
