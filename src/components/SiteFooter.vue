@@ -7,9 +7,9 @@
           href="https://github.com/sinnedpenguin/dennx"
           className="hover:underline"
         >
-          Santa
+          DEMO
         </a>
-          - AI-powered Santa Clause -
+          - AI- Persona -
         <a
           target="_blank"
           href="https://b-bot.ch"

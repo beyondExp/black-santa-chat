@@ -79,13 +79,14 @@ function handleClearChat() {
   messages.value = [];
 };
 
-function formatMessage(message: string) {
-  let formattedMessage = message
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n/g, '<br />'); 
 
-  return formattedMessage;
-}
+//function formatMessage(message: string) {
+//  let formattedMessage = message
+//    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+//    .replace(/\n/g, '<br />');
+
+//  return formattedMessage;
+//}
 </script>
 
 <template>
@@ -100,7 +101,7 @@ function formatMessage(message: string) {
         message.sender === 'user' ? 'self-end' : 'self-start chat-message'
       ]"
     >
-      <div v-html="formatMessage(message.text)"></div>
+      <div v-html="message.text"></div>
     </div>
     <div v-if="aiThinking" class="self-start p-2 rounded-md bg-secondary">
       <span class="animate-ping">.</span>

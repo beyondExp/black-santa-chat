@@ -15,6 +15,7 @@ const toggleModal = () => {
   showModal.value = !showModal.value;
 }
 
+const logoURL = import.meta.env.VITE_LOGO_URL;
 
 </script>
 
@@ -28,7 +29,7 @@ const toggleModal = () => {
         <AvatarImage
           @click="toggleModal"
           class='logo-santa'
-          src="/bbot-meets-dark.png"
+          :src="logoURL"
           alt="Santa"
           size="55"
           style="width: auto; height: 55px; margin: auto;"

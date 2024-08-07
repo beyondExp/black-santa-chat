@@ -6,16 +6,21 @@ export async function sendPrompt(message: string) {
     // Retrieve the data attribute from sessionStorage
     const conversationId = sessionStorage.getItem('conversationId');
     const markdown = new MarkdownIt();
+    const expertId = import.meta.env.VITE_EXPERT_ID;
+    const modelId = import.meta.env.VITE_MODEL_ID;
+    const abilityId = import.meta.env.VITE_ABILITY_ID;
+    const apiKey = import.meta.env.VITE_API_KEY;
 
     // Prepare the payload for the POST request
     const payload = {
-      "expert_id": 37,
-      "ability_id": 80,
-      "model_id": 6 ,
-      "session_id": 6 ,
-      "user_id": 123,
+      "expert_id": expertId,
+      "ability_id": abilityId,
+      "model_id": modelId ,
+      "session_id": "6" ,
+      "user_id": "123",
       "input_data": message,
       "document_urls": [],
+      "conversation_history": [],
       "tool_config": {
         "tavily_max_results": 1
       },
@@ -28,11 +33,11 @@ export async function sendPrompt(message: string) {
     };
 
     const response = await axios.post(
-      "/api/v1/invoke_agent",
+      "https://api.b-bot.space/api/v1/invoke_agent",
       payload,
       {
         headers: {
-          "bbot-api-key": `bbot_kvx97s1gkkx02mmx3jm0tpunjg7rohb1joy6985usz`,
+          "bbot-api-key": apiKey,
         }
       }
     );
@@ -41,7 +46,6 @@ export async function sendPrompt(message: string) {
     //if (response.data.conversationId) {
     //  sessionStorage.setItem('conversationId', response.data.conversationId);
     //}
-
     return markdown.render(response.data.output);
 
   } catch (error: any) {

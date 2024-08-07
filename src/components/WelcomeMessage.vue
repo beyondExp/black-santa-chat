@@ -22,14 +22,8 @@ onAuthStateChanged(auth, (userState) => {
   user.value = userState;
 });
 
-const examplePrompts = [
-  'Ich brauche eine Geschenkidee für eine Freundin',
-  'Kannst du mir ein Weihnachtsgedicht schreiben?',
-  'Welches Geschenk passt zu einem 10-jährigen Jungen?',
-  'Ich brauche ein Geschenk für meine Mutter',
-  'Ich brauche ein Geschenk für meinen Vater',
-  'Kannst du mir ein Rezept für Plätzchen geben?',
-]
+const examplePrompts = JSON.parse(import.meta.env.VITE_EXAMPLE_PROMPTS || '[]');
+
 
 function handlePromptClick(prompt: string) {
   emit('send-prompt', prompt);
@@ -41,19 +35,23 @@ function handlePromptClick(prompt: string) {
   }
    */
 }
+
+const avatarImageUrl = import.meta.env.VITE_AVATAR_IMAGE_URL;
+const cardTitle = import.meta.env.VITE_CARD_TITLE;
+const cardDescription = import.meta.env.VITE_CARD_DESCRIPTION
 </script>
 
 <template>
   <Card>
     <CardHeader style='text-align: center'>
       <AvatarImage
-        src="https://files.oaiusercontent.com/file-fSpulO0YeTxejOK3DtMFd3ex?se=2123-10-18T03%3A43%3A49Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D16d37a55-484b-45be-ba38-77bd07280e9f.png&sig=P/afddIw/5Sce667fr4jzEZhJZZkPT7kZWo4tr7JxZ4%3D"
+        :src="avatarImageUrl"
         alt="Santa"
         size="55"
         style="width: 55px; height: 55px; border-radius: 50%; margin: auto;"
       />
-      <CardTitle>Hallo ich bin Santa!</CardTitle>
-      <CardDescription>Beginne ein Gespräch mit mir, indem du mir eine Nachricht schickst oder auf die Beispielanweisungen klickst.</CardDescription>
+      <CardTitle>{{ cardTitle }}</CardTitle>
+      <CardDescription>{{ cardDescription }}</CardDescription>
     </CardHeader>
     <CardContent class="flex flex-col gap-4 my-3">
       <Button 
