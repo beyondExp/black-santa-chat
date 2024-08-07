@@ -58,6 +58,7 @@ const cardDescription = import.meta.env.VITE_CARD_DESCRIPTION
         v-for="(prompt, index) in examplePrompts" 
         :key="index" 
         variant="outline"
+        style='height:auto;'
         @click="handlePromptClick(prompt)"
       >
         {{ prompt }}
